@@ -6,11 +6,11 @@ const port = process.env.PORT || 8080;
 
 
 //public static path
-const static_path = path.join(__dirname,"../public");
+const static_path = path.join(__dirname,"/public");
  app.use(express.static(static_path));
 
-const view_path = path.join(__dirname,"../templates/views");
-const partial_path = path.join(__dirname,"../templates/partials"); 
+const view_path = path.join(__dirname,"/templates/views");
+const partial_path = path.join(__dirname,"/templates/partials"); 
 
 app.set('views', view_path);  
 app.set("view engine","hbs"); 
